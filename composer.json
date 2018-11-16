@@ -1,0 +1,46 @@
+{
+  "name": "tomahawk/omnipay-wrapper",
+  "description": "Laravel extension. A wrapper for the omnipay to call events before and after a payment.",
+  "type": "package",
+  "keywords": [
+    "laravel",
+    "wrapper",
+    "amnipay"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Paul Warren",
+      "email": "paul.warren@tomahawk.ca",
+      "role": "Developer",
+      "homepage": "https://tomahawk.ca"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "ext-json": "*",
+    "league/omnipay": "3",
+    "academe/omnipay-authorizenetapi": "~3.0",
+    "omnipay/authorizenet": "^3.0"
+  },
+  "require-dev": {
+    "laravel/framework": "~5.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Tomahawk\\OmnipayWrapper\\": "src/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    },
+    "laravel": {
+      "providers": [
+        "Tomahawk\\OmnipayWrapper\\WrapperServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
